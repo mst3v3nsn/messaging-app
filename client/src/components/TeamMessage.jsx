@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const TeamMessage = () => {
-  return (
-    <div>TeamMessage</div>
-  )
+    return (
+        <div>TeamMessage</div>
+    )
 }
 
-export default TeamMessage
+export default TeamMessage;

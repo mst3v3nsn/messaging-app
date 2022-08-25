@@ -27,10 +27,7 @@ const Auth = () => {
         e.preventDefault();
 
         const { username, password, phoneNumber, avatarURL } = form;
-
         const URL = 'http://localhost:5000/auth';
-
-        console.log(form);
 
         const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
             username, password, fullName: form.fullName, phoneNumber, avatarURL
@@ -72,7 +69,6 @@ const Auth = () => {
                                 />
                             </div>
                         )}
-
                         <div className="auth__form-container_fields-content_input">
                             <label htmlFor="username">Username</label>
                             <input 
@@ -154,4 +150,4 @@ const Auth = () => {
     )
 }
 
-export default Auth
+export default Auth;
